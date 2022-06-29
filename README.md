@@ -5,15 +5,18 @@ this is a repo that aims to cover the fundamentals of Machine Learning and Artif
 
 
 ### conda install on mac
+```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
+```
 
 
 # Setup the conda virtual env
+```bash
 $ conda env create -f ./mlflow-tutorial/conda.yaml
 $ conda activate tutorial
 $ python mlflow-tutorial/train.py
-
+```
 
 Machine learning:
 linear regression model
@@ -21,7 +24,7 @@ alpha
 l1 ratio
 prediction qualities
 
-RMSE
+RMSE - 
 MAE - mean absolute error
 r2 - r squared
 
@@ -65,6 +68,6 @@ Try out a model using inputs:
 ```bash
 curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["alcohol", "chlorides", "citric acid", "density", "fixed acidity", "free sulfur dioxide", "pH", "residual sugar", "sulphates", "total sulfur dioxide", "volatile acidity"],"data":[[12.8, 0.029, 0.48, 0.98, 6.2, 29, 3.33, 1.2, 0.39, 75, 0.66]]}' http://127.0.0.1:1234/invocations
 
-This is what is returned: [5.120775719594933]%     
+This is returned: [5.120775719594933]%     
 ```
 
