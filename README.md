@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=R15LjD8aCzc
 ![Linear Regression](./docs/linear_regression.png "Linear Regression")
 
 ```bash
-y = a_0 + a_1 * x      ## Linear Equation
+y = b_0 + b_1 * x      ## Linear Equation
 ```
 
 # Run the ui
